@@ -58,9 +58,9 @@ Le choix du nom pour nos variables est libre en Python. Il faut cependant respec
 
 Les noms de variables en Python sont sensibles à la casse, ce qui signifie qu’on va faire une différence entre l’emploi de majuscules et de minuscules.
 
-```python=
-prenom="Thomas"
-age=23
+```py
+    prenom="Thomas"
+    age=23
 ```
 
 ## Qu’est-ce qu’un type de données ?
@@ -118,13 +118,13 @@ Python dispose de nombreux opérateurs qui peuvent être classés selon les cat�
 
 |Opérateur | Nom              | 
 | -------- | --------         | 
-| +	       | Addition         | 
+|        + | Addition         | 
 |        – |	Soustraction  |
 |        * |	Multiplication|
 |        / |    Division      |
 |        % |    Modulo        |
 |        **|	Puissance     |
-|        //|	Division entière|
+|        //|  Division entière|
 
 
 Le modulo correspond au reste d’une division Euclidienne (division entière) tandis que l’opérateur // permet d’obtenir le résultat entier d’une division
@@ -176,7 +176,7 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 * 37%(5%2)
 * 37%5%2
 
-### 1.4 Evaluer chacune des expressions suivantes en supposant que m a pour valeur 24 et que n a pour valeur 7 : 
+### 1.4 Evaluer chacune des expressions suivantes en supposant que m=24 et que n=7 : 
 
 * m-n-8
 * m%n
@@ -186,11 +186,11 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 * m+=n
 * m=n=3
 
-### 1.5 Ecrire un programme qui demande vos noms et adresses et qui affiche "Bonjour *votre nom*, votre adresse est *votre adresse*"
+### 1.5 Ecrire un programme qui demande vos nom/prenoms, adresses et qui affiche "Bonjour *votre nom*, votre adresse est *votre adresse*"
 
 ### 1.6 Ecrire un programme qui affiche la lettre majuscule "P" dans grille 7x7:
 
-```
+```py
 ******
 *     *
 *     *
@@ -203,20 +203,20 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 ### 1.7 Ecrire un programme qui affiche la somme, la différence, le produit, le quotient et le reste de deux entiers lus ou clavier. Testez avec les valeurs 60 et 7 !
 
 
- ## Listes 
+## Listes 
  
 Jusqu’à présent, nous n’avons stocké qu’une seule valeur à la fois dans nos variables. Les listes sont un type de données très particulier au sens où elles représentent des données composées ou combinées. Une liste est en effet par définition composée d’une suite de valeur ou d’éléments. 
 
 Pour définir une nouvelle liste en Python, on va devoir utiliser une paire de crochets [ ].
 
-```python=
-prenoms= ['Michel', 'Moustafa', 'Kevin']
+```py
+python=prenoms= ['Michel', 'Moustafa', 'Kevin']
 ```
 
 On va pouvoir stocker tous types de valeurs dans une liste. 
 
-```python=
-infos= ['Michel', 33, True]
+```py
+python=infos= ['Michel', 33, True]
 ```
 
 Note : Si vous avez déjà étudié un autre langage de programmation par le passé, les liste doivent vous faire penser à ce qu’on appelle communément dans ces autres langages des tableaux. En effet, les listes Python sont très proches des tableaux qu’on peut retrouver dans de nombreux autres langages.
@@ -234,7 +234,7 @@ Pour récupérer une valeur en particulier dans une liste, on va devoir précise
 Notez que les indices négatifs sont acceptés.
 
 
-```
+```py
 infos= ['Michel', 33, True]
 
 >>> infos[0]
@@ -248,7 +248,7 @@ True
 
 On va également pouvoir récupérer une tranche de valeurs dans une liste.
 
-```
+```py
 infos= ['Michel', 33, True]
 
 >>> infos[:]
@@ -267,7 +267,7 @@ infos= ['Michel', 33, True]
 
 Ce qu’on a vu jusqu’ici sur les listes s’applique également aux chaines de caractères. Les chaînes de caractères peuvent en effet également être indexées.
 
-```
+```py
 intro = 'Salut, ça va bien ?'
 >>> intro[2]
 l
@@ -279,7 +279,7 @@ bien
 
 A la différence des types de données simples comme les chaines qui sont immuables, les listes sont un type de données altérable ce qui signifie qu’on va pouvoir altérer leur structure ou modifier leur contenu en ajoutant, supprimant ou remplaçant des valeurs.
 
-```
+```py
 prenoms= ['Michel', 'Moustafa', 'Kevin', 'Tintin', 'Sangoku']
 >>>prenoms[2]
 Kevin
@@ -294,7 +294,7 @@ prenoms[:]=[]
 ```
 on va aussi pouvoir utiliser les opérateurs de concaténation
 
-```
+```py
 prenoms=['Michel', 'Moustafa']
 ages=[27,56]
 
@@ -322,7 +322,7 @@ Les tuples ressemblent aux listes : un tuple consiste en différentes valeurs en
 
 Les tuples peuvent contenir différents types de valeurs comme des nombres, des chaines, des listes etc. et même d’autres tuples imbriqués. 
 
-```
+```py
 t1 = 'un', 'deux', 'trois'
 print(t1[1])
 
@@ -353,7 +353,7 @@ Notez que dans le cas où on souhaite créer un tuple vide, on utilisera une pai
 Une fonctionnalité intéressante des tuples est le “déballage de séquence”. Un déballage de séquence correspond à une façon rapide d’affecter les différentes valeurs d’un tuple dans des variables séparées.
 
 
-```
+```py
 personnage = ('Vladimir', 73, ['pêche', 'équitation'])
 
 nom, age, sport = personnage
@@ -384,14 +384,14 @@ La grande différence entre les données séquentielles (listes, tuples) et les 
 
 Dans les dictionnaires, les index seront des chaînes de caractères, contrairement aux listes.
 
-```
+```py
 personnage = {"nom":"Pierre", "age": 29, "sport" : ["Trail","Triathlon"]}
 personnage["nom"]
 personnage["sport"]
 ```
 Le type dictionnaire étant un type modifiable, on peut commencer par créer un dictionnaire vide, puis le remplir petit à petit.
 
-```
+```py
 heroes = {}
 heroes["Batman"]= "Bruce Wayne"
 heroes["Superman"]= " Clark Kent"
@@ -399,7 +399,7 @@ heroes["Superman"]= " Clark Kent"
 ```
 Pour supprimer une paire clef : valeur d’un dictionnaire, nous allons utiliser l’instruction del.
 
-```
+```py
 del heroes["batman"]
 ```
 ## Ensembles
@@ -408,7 +408,7 @@ Les ensemble ou sets forment un autre type de données composites Python. Un ens
 
 Une des utilisation les plus courantes des ensembles est de les utiliser pour supprimer des valeurs doublons à partir d’un autre type de données.
 
-```
+```py
 l2 = {"Mathile", 27, "Tennis", 27, "Tennis"}
 print(l2)
 >>> {"Mathile", 27, "Tennis"}
@@ -445,15 +445,14 @@ Pour comparer des valeurs, nous allons devoir utiliser des opérateurs de compar
 | -------- | --------                                               |
 |==    | Permet de tester l’égalité en valeur et en type            |
 | !=     |Permet de tester la différence en valeur ou en type             |
-| <    | Permet de tester si une valeur est strictement inférieure à une                 autre               |
-| >     | 	Permet de tester si une valeur est strictement supérieure à une autre                |
+| <    | Permet de tester si une valeur est strictement inférieure à une autre  |
+| >     | 	Permet de tester si une valeur est strictement supérieure à une autre |
 | <=    |Permet de tester si une valeur est inférieure ou égale à une autre           |
-|>=    |Permet de tester si une valeur est supérieure ou égale à une autre
-
+|>=    |Permet de tester si une valeur est supérieure ou égale à une autre  |
 
 Lorsqu’on utilise un opérateur de comparaison, on demande à Python de tester si telle valeur est supérieure, égale, inférieur ou différente à telle autre valeur. Python va donc comparer les deux valeurs et toujours renvoyer un booléen : True si la comparaison est vérifiée ou False dans le cas contraire.
 
-```
+```py
 4 < 5
 True
 
@@ -474,7 +473,7 @@ Cette condition va nous permettre d’exécuter un code si (et seulement si) une
 Si Python évalue l’expression passée à True, le code dans la condition if sera exécuté. Dans le cas contraire, le code dans if sera ignoré.
 
 
-```
+```py
 x = int(input('Entrer une valeur pour x : '))
 y = int(input('Entrer une valeur pour y : '))
 
@@ -498,7 +497,7 @@ Pour comprendre cela vous devez savoir qu’en dehors des comparaisons Python é
 
 La structure conditionnelle if…else (« si… sinon » en français) est plus complète que la condition if puisqu’elle nous permet d’exécuter un premier bloc de code si un test renvoie True ou un autre bloc de code dans le cas contraire.
 
-```
+```py
 x = 6
 
 if x == 5:
@@ -513,7 +512,7 @@ La condition if…elif…else (« si…sinon si…sinon ») est une structure co
 
 Il faut cependant faire attention à un point en particulier lorsqu’on utilise une structure Python if… elif… else : le cas où plusieurs elif possèdent un test évalué à True par Python.
 
-```
+```py
 x = int(input('Entrer une valeur pour x : '))
 
 if x == 5:
@@ -527,7 +526,7 @@ else:
 ```
 ## Imbriquer des conditions
 
-```
+```py
 x = int(input('Entrer une valeur pour x : '))
 y = int(input('Entrer une valeur pour y : '))
 
@@ -551,7 +550,7 @@ Les opérateurs logiques vont être principalement utilisés avec les conditions
 | not      | Renvoie True si la comparaison vaut False (et inversement)   | 
 
 
-```
+```py
 x = int(input('Entrer une valeur pour x : '))
 y = int(input('Entrer une valeur pour y : '))
 
@@ -567,10 +566,10 @@ l’opérateur logique not est très particulier puisqu’il nous permet d’inv
 
 L’opérateur in permet de tester si une certaine séquence de caractères ou de valeurs est présente dans une valeur d’origine et renvoie True si c’est le cas.
 
-```python=
+```py
 semaine = ["lundi", "Mardi", "Mercredi",
-           "Jeudi", "Vendredi", "Samedi", "Dimanche"
-           ]
+           "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+
 if "Mardi" in semaine:
     print('Mardi est le deuxième jour de la semaine')
 ```
@@ -579,13 +578,13 @@ if "Mardi" in semaine:
 
 ### 2.1 Ecrire un programme qui lit l'âge de l'utilisateur et qui affiche "Junior" pour les moins de 18 ans, "Adulte" à partir de 18 ans et "Senior" à parti de 65 ans.
 
-### 2.2 Ecrire un programme qui lit deux nombres entiers et qui affiche si l'un des nombres est multiple de l'autre. 
+### 2.2 Ecrire un programme qui lit deux nombres entiers entré au clavier et qui affiche si l'un des nombres est multiple de l'autre. 
 
-### 2.3 Ecrire un programme qui lit quatres nombres entiers puis affiche le plus petit et le plus grand de ces nombres.
+### 2.3 Ecrire un programme qui lit quatres nombres entiers  entré au clavier puis affiche le plus petit et le plus grand de ces nombres.
 
-### 2.4 Ecrire un programme qui lit deux nombres et un caractère +,-,* ou /. Suivant le caractère, le programme affiche l'opération correspondante.
+### 2.4 Ecrire un programme qui lit deux nombres et un caractère +,-,* ou /  entré au clavier. Suivant le caractère, le programme affiche l'opération correspondante.
 
-### 2.5 Ecrire un programme qui vérifie si une année est bissextile. Ce sont les années divisibles par 4 mais pas par 100 ou les années divisible par 400.
+### 2.5 Ecrire un programme qui vérifie si une année entré au clavier est bissextile. Ce sont les années divisibles par 4 mais pas par 100 ou les années divisible par 400.
 
 ### 2.6 Ecrire un programme qui lit une côte sur 10, et qui affiche : 
 
@@ -613,7 +612,7 @@ Le fonctionnement général des boucles sera toujours le même : on pose une con
 
 La boucle while va nous permettre d’exécuter un certain bloc de code « tant qu’une » condition donnée est vérifiée.
 
-```
+```py
 x = 1
 
 while x < 10:
@@ -631,7 +630,7 @@ En effet, la boucle for Python va nous permettre d’itérer sur les éléments 
 
 La condition de sortie dans cette boucle va être implicite : on sortira de la boucle après avoir parcouru le dernier élément de la séquence.
 
-```
+```py
 semaine = ["lundi", "Mardi", "Mercredi",
            "Jeudi", "Vendredi", "Samedi", "Dimanche"
            ]
@@ -649,7 +648,7 @@ Si on précise deux nombres en arguments de cette fonction, le premier nombre se
 
 Finalement, on peut préciser un troisième et dernier nombre en argument de range() qui nous permet de préciser son pas, c’est-à-dire l’écart entre deux nombres générés.
 
-```
+```py
 for n in range(10):
     print(n+1)
 
@@ -664,10 +663,8 @@ Ajoute un compteur à un itérable et le renvoie sous la forme d’un objet enum
 Cet objet enumerate peut ensuite être utilisé directement dans les boucles for ou être converti en une liste de tuples à l’aide de la méthode list ().
 enumerate prend en paramètre une liste et renvoie un objet qui peut être associé à une liste contenant deux valeurs par élément : l’indice et l’élément de la liste parcourue.
 
-```
-semaine = ["lundi", "Mardi", "Mercredi",
-            "Jeudi", "Vendredi", "Samedi", "Dimanche"
-            ]
+```py
+semaine = ["lundi", "Mardi", "Mercredi","Jeudi", "Vendredi", "Samedi", "Dimanche"]
 
 for index, value in enumerate(semaine):
     print(index,value)
@@ -678,7 +675,7 @@ Les instructions break et continue sont deux instructions qu’on retrouve dans 
 
 L’instruction break permet de stopper l’exécution d’une boucle lorsqu’une certaine condition est vérifiée. On l’inclura souvent dans une condition de type if.
 
-```    
+```py    
 for val in "string":
     if val == "i":
         break
@@ -686,9 +683,10 @@ for val in "string":
 
 print("The end")
 ```
+
 L’instruction continue permet elle d’ignorer l’itération actuelle de la boucle et de passer directement à l’itération suivante. Cette instruction va donc nous permettre d’ignorer toute ou partie de notre boucle dans certaines conditions et donc de personnaliser le comportement de notre boucle.
 
-```
+```py
 for i in range(9):
     if i % 2 == 0:
         continue
@@ -696,12 +694,13 @@ for i in range(9):
         print(i)
 ```
 
-
 ## Exercices instructions répétitives 
 
 ### 3.1 Pour afficher un carractère du code ASCII, il suffit d'utiliser la fonction chr(i), où i représente le numéro de caractère. Ecrire un programme qui affiche les 128 premiers caractères, précédés de leur numéro.
 
+
 ### 3.2 Ecrire un programme qui lit le nombre de ligne d'étoiles, et qui affiche un triangle rectangle en accroissant de un le nombre d'étoiles par ligne.
+
 Exemple : nombre de lignes d'étoiles = 4
 ```
 *
@@ -725,7 +724,7 @@ Exemple : sangoku devient `u*k*o*g*n*a*s`
 
 # D3 Les fonctions
 
-### Qu’est-ce qu’une fonction ?
+## Qu’est-ce qu’une fonction ?
 
 Une fonction est un bloc de code nommé. Une fonction correspond à un ensemble d’instructions créées pour effectuer une tâche précise, regroupées ensemble et qu’on va pouvoir exécuter autant de fois qu’on le souhaite en “l’appelant” avec son nom.
 
@@ -749,16 +748,16 @@ Pour définir une nouvelle fonction en Python, nous allons utiliser le mot clef 
 
 Notez que les noms de fonctions sont sensibles à la casse en Python.
 
-```python=
-def bonjour(prenom):
+```py
+python=def bonjour(prenom):
     print('Bonjour',prenom,'!')
 
 bonjour('Thomas')
 ```
 ### Préciser des valeurs par défaut pour les paramètres d’une fonction
 
-```python=
-def bonjour(prenom, age=36, national='Belge'):
+```py
+python=def bonjour(prenom, age=36, national='Belge'):
     print('Bonjour',prenom,'!','tu as',age, 'ans et tu est',national)
 
 bonjour('Thomas')
@@ -769,8 +768,8 @@ bonjour('François', 39, 'Français')
 
 La syntaxe *args (remplacez “args” par ce que vous voulez) permet d’indiquer lors de la définition d’une fonction que notre fonction peut accepter un nombre variable d’arguments. Ces arguments sont intégrés dans un tuple.
 
-```python=
-def somme(*args):
+```py
+python=def somme(*args):
     s=0
     for i in args:
         s+=i
@@ -783,19 +782,19 @@ En programmation, nous voudrons souvent récupérer le résultat d’une fonctio
 
 ### Exemples d’utilisation de return en Python
 
-return une valeur 
+retour une valeur
 
-```python=
-def difference(a, b):
+```py
+python=def difference(a, b):
     return a - b
 
 x = difference(8, 4)
 print(x)
 ```
-return plusieurs valeurs
+retourn plusieurs valeurs
 
-```python=
-def ordre(a, b):
+```py
+python=def ordre(a, b):
     if a <= b:
         return a, b
     else:
@@ -809,8 +808,9 @@ print(ordonne)
 
 Les fonctions récursive sont des fonctions qui s'appelle elle même dans son exécution : c’est ce qu’on appelle la récursivité. 
 Exemple la factorielle de 4 par exemple est égale à 4 * 3 * 2 * 1.
-```python=
-def factorielle(n):
+
+```py
+python=def factorielle(n):
     if n <=1:
         return 1
     else:
@@ -857,8 +857,8 @@ La fonction *input()* permet de dialoguer et d’échanger des données avec l�
 
 Les compréhensions de listes fournissent un moyen de construire des listes de manière très concise.
 
-```python=
-vec = [-4, -2, 0, 2, 4]
+```py
+python=vec = [-4, -2, 0, 2, 4]
 # faire une nouvelle liste avec les valeurs doublées
 [x*2 for x in vec]
 [-8, -4, 0, 4, 8]
@@ -872,9 +872,8 @@ vec = [-4, -2, 0, 2, 4]
 
 d'autres exemples :wave: 
 
-
-```python=
-no_integers = []
+```py
+python=no_integers = []
 
 for x in semaine:
     if type(x) == int:
@@ -882,9 +881,11 @@ for x in semaine:
 
 print(no_integers)
 ```
+
 ==>
-```python=
-no_integers = [x for x in semaine if isinstance(x, str)]  
+
+```py
+python=no_integers = [x for x in semaine if isinstance(x, str)]  
 print(no_integers)
 ```
 
@@ -908,19 +909,19 @@ Pour importer un module, on utilise la syntaxe import nom-de-mon-module. Lorsque
 * Si le module est introuvable, Python recherche ensuite chaque répertoire listé dans la variable shell PYTHONPATH.
 * Si tout échoue, Python vérifie le chemin par défaut. Sous UNIX, ce chemin par défaut est normalement /usr/local/lib/python/.
 
-```
+```py
 from math import *
 ```
 
 ## Importer uniquement certains éléments d’un module
 
-```
+```py
 from math import sqrt
 ```
 
 ## Créer un alias de nom pour un module
 
-```
+```py
 import math as m
 ```
 
@@ -952,11 +953,11 @@ Les modules Python standards à connaitre sont les suivants :
 * La liste des nombres de 1 à n.
 * Les sous-listes de nombres impairs et pairs.
 
-### 4.2 Ecrire un programme qui lit n nombres réels et qui les affiches d'abord dans l'ordre et ensuite dans l'ordre inverse.
+### 4.2 Ecrire un programme qui lit N nombres réels et qui les affiches d'abord dans l'ordre et ensuite dans l'ordre inverse.
 
-### 4.3 Ecrire un programme qui lit n nombres réels et qui affiche leur minimum et maximum.
+### 4.3 Ecrire un programme qui lit N nombres réels et qui affiche leur minimum et maximum.
 
-### 4.4 Ecrire un programme qui lit n nombres réels et qui affiche leur moyenne.
+### 4.4 Ecrire un programme qui lit N nombres réels et qui affiche leur moyenne.
 
 ## Exercices Modularité
 
@@ -1005,11 +1006,11 @@ Chaque partie des modules doit être séparée par une ligne qui les espace.
 ### Espaces : Les opérateurs doivent être entourés d'espaces.
 
 Good :+1: 
-```
+```py
 name = 'Batman'
 ```
 Bad :-1: 
-```
+```py
 name='Batman'
 ```
 ### Conventions d'appellation
@@ -1020,12 +1021,12 @@ variable, function and module : utilisation du snake_case.
 
 Good :+1: 
 
-```
+```py
 my_variable = 'Hello'
 ```
 Bad :-1:
 
-```
+```py
 myVariable = 'Hello'
 MyVariable = 'Hello'
 
@@ -1037,12 +1038,12 @@ class : Utiliser le PascalCase
 
 Good :+1: 
 
-```
+```py
 class MyClass:
 ```
 Bad :-1: 
 
-```
+```py
 class my_class:
 ```
 
@@ -1068,7 +1069,7 @@ Ecrivez un programme qui, étant donné une phrase, peut compter les occurrences
 
 Par exemple, pour l'entrée `olly olly in come free` :
 
-```
+```py
 olly : 2
 in : 1
 come : 1
@@ -1084,12 +1085,12 @@ Mettez en œuvre le codage et le décodage de la longueur d'exécution. Run-leng
 
 Par exemple, nous pouvons représenter les 53 caractères originaux par 13 seulement.
 
-```
+```py
 "WWWWWWWWWWWWBWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWB" -> "12WB12W3B24WB"
 ```
 RLE permet de reconstruire parfaitement les données originales à partir des données compressées, ce qui en fait une compression de données sans perte.
 
-```
+```py
 "AABCCCDEEEE" -> "2AB3CD4E" -> "AABCCCDEEEE"
 ```
 ### 7. Différence de carrés 
@@ -1175,26 +1176,26 @@ Supposons qu'un robot démarre à {7, 3} face au nord. En exécutant ce flux d'i
 
 Pip est un gestionnaire de packages Python.
 
-```
+```shell
 pip install <package>
 ```
 Afficher les packets déjà télécharger 
 
-```
+```shell
 pip freeze
 ```
 ## Web scraping avec Requests et Beautifull_soup 
 
 ETL signifie extraction, transformation et chargement (Extract, Transform, Load en anglais). C’est une procédure qui "permettant d'effectuer des synchronisations massives d'information d'une source de données (le plus souvent une base de données) vers une autre" (source [Wikipédia](https://fr.wikipedia.org/wiki/Extract-transform-load)).
 
-```
+```shell
 pip install requests
 ```
-```
+```shell
 pip install beautifulsoup4
 ```
 
-```python=
+```py
 
 # On importe requests
 import requests
@@ -1237,14 +1238,15 @@ print(titres[0],':', descriptions[0][1], end='\r')
 ## Détection de visage avec openCV et DeepFace
 
 On va utiliser les fichiers .xml fournit par open CV pour détecter des visages dans des images. 
-```
+```shell
 pip install opencv-python
 ```
-```
+```shell
 pip install pathlib2
 ```
 
-```python=
+```py
+
 from deepface import DeepFace
 import pathlib
 import cv2
