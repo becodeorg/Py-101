@@ -1,5 +1,14 @@
 # Python 101
 
+## Introduction
+
+* Presentez vous (prenom , parcours , connaissance informatique, objectif )
+
+* Ce qui vous a amener a cette formation ( actiris , un ami , pub )
+
+* Quels sont vos attente pour cette formation et quels sont vos "a priori" 
+
+
 ### Installer visual studio [code](https://code.visualstudio.com/)
 
 ### Installer l'interpreteur [python]( https://www.python.org/downloads/) 
@@ -160,6 +169,7 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 * L'étoile du Nord
 * C'est "génial !!!"
 * `^0\/0^`
+* affichez la valeur d'une variable
 
 ### 1.2 Déterminer le type des expressions suivantes:
 
@@ -167,9 +177,12 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 * 2+3.14
 * '3'
 * 10²
+* 10.0/3.0
 
 ### 1.3 Evaluer chacune des expressions suivantes:
 
+* 40//3
+* 40/3
 * 37-5-2
 * 37/(5*2)
 * 37/5/2
@@ -186,9 +199,11 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 * m+=n
 * m=n=3
 
-### 1.5 Ecrire un programme qui demande vos nom/prenoms, adresses et qui affiche "Bonjour *votre nom*, votre adresse est *votre adresse*"
+### 1.5 Assignez une chaine de charactere a deux variable : a = "Hello" ,b = "world" et affichez leur **concatenation**
 
-### 1.6 Ecrire un programme qui affiche la lettre majuscule "P" dans grille 7x7:
+### 1.6 Ecrire un programme qui demande vos nom/prenoms, adresses et qui affiche "Bonjour *votre nom*, votre adresse est *votre adresse*"
+
+### 1.7 Ecrire un programme qui affiche la lettre majuscule "P" dans grille 7x7:
 
 ```py
 ******
@@ -200,7 +215,7 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 *
 ```
 
-### 1.7 Ecrire un programme qui affiche la somme, la différence, le produit, le quotient et le reste de deux entiers lus ou clavier. Testez avec les valeurs 60 et 7 !
+### 1.8 Ecrire un programme qui affiche la somme, la différence, le produit, le quotient et le reste de deux entiers lus ou clavier. Testez avec les valeurs 60 et 7 !
 
 
 ## Listes 
@@ -1290,7 +1305,6 @@ while True:
 
 camera.release()
 cv2.destroyAllWindows()
-
 ```
 
 
