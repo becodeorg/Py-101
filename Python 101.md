@@ -35,47 +35,47 @@ C'est un language présent dans de nombreux domaines 👍
 
 En Python, on utilise le signe # pour écrire un commentaire dans notre code.
 
-L’indentation Python correspond au fait de créer des retraits au niveau de certaines lignes de code. Elle est utilisée par Python pour définir des blocs de code.Si on indente mal notre code Python, celui-ci ne s’exécutera tout simplement pas et Python renverra une erreur. dès qu’il y a une relation de dépendance, il faudra ajouter un retrait (une fabulation).
+L'indentation Python correspond au fait de créer des retraits au niveau de certaines lignes de code. Elle est utilisée par Python pour définir des blocs de code.Si on indente mal notre code Python, celui-ci ne s'exécutera tout simplement pas et Python renverra une erreur. dès qu'il y a une relation de dépendance, il faudra ajouter un retrait (une fabulation).
 
-La fonction print() permet tout simplement d’afficher le message qu’on va lui passer entre ses parenthèses. A première vue, la fonction print() ne parait pas très utile, et c’est pourtant l’une des fonctions qu’on utilisera le plus.
+La fonction print() permet tout simplement d'afficher le message qu'on va lui passer entre ses parenthèses. A première vue, la fonction print() ne parait pas très utile, et c'est pourtant l'une des fonctions qu'on utilisera le plus.
 
 La fonction print() de Python est fournie avec un paramètre appelé "end". Par défaut, la valeur de ce paramètre est '\n', c'est-à-dire le caractère de nouvelle ligne.
 
 Vous pouvez terminer une instruction d'impression avec n'importe quel caractère ou chaîne de caractères en utilisant ce paramètre.
 
-## Qu’est-ce qu’une variable ?
+## Qu'est-ce qu'une variable ?
 
 Une variable, dans le domaine de la programmation informatique, est un conteneur qui sert à stocker une valeur. Les variables possèdent deux caractéristiques fondamentales :
 
-* Les variables ont une durée de vie limitée, ce qui signifie qu’on ne va pas pouvoir utiliser les variables pour stocker des données de manière pérenne ;
-* La valeur d’une variable peut varier : les variables peuvent peuvent stocker différentes valeurs (la nouvelle valeur remplaçant l’ancienne).
+* Les variables ont une durée de vie limitée, ce qui signifie qu'on ne va pas pouvoir utiliser les variables pour stocker des données de manière pérenne ;
+* La valeur d'une variable peut varier : les variables peuvent peuvent stocker différentes valeurs (la nouvelle valeur remplaçant l'ancienne).
 
 Les variables Python sont automatiquement créées au moment où on leur assigne une valeur.
 
 Le choix du nom pour nos variables est libre en Python. Il faut cependant respecter les règles usuelles suivantes :
 
 * Le nom doit commencer par une lettre ou par un underscore ;
-* Pas d’espace dans le nom d’une variable si de caractères spéciaux comme des caractères accentués ou tout autre signe;
+* Pas d'espace dans le nom d'une variable si de caractères spéciaux comme des caractères accentués ou tout autre signe;
 * On ne peut pas utiliser certains mots qui possèdent déjà une signification spéciale pour le langage.
 
-Les noms de variables en Python sont sensibles à la casse, ce qui signifie qu’on va faire une différence entre l’emploi de majuscules et de minuscules.
+Les noms de variables en Python sont sensibles à la casse, ce qui signifie qu'on va faire une différence entre l'emploi de majuscules et de minuscules.
 
 ```py
     prenom="Thomas"
     age=23
 ```
 
-## Qu’est-ce qu’un type de données ?
+## Qu'est-ce qu'un type de données ?
 
-Python définit de nombreux types de données qu’on va pouvoir stocker dans nos variables et manipuler à loisir ensuite : nombres entiers, décimaux, complexes, chaines de caractères, booléens, listes, tuples, dictionnaires, etc.
+Python définit de nombreux types de données qu'on va pouvoir stocker dans nos variables et manipuler à loisir ensuite : nombres entiers, décimaux, complexes, chaines de caractères, booléens, listes, tuples, dictionnaires, etc.
 
 ### Les types numériques int, float et complex
 
 * Le type int qui représente tout entier positif ou négatif ;
 * Le type float qui représente les nombres décimaux et certaines expressions scientifiques comme le e pour désigner une exponentielle par exemple;
-* Le type complex qui représente les nombres complexes ou nombres imaginaires et qui se sert de la lettre j pour représenter la partie imaginaire d’un nombre.
+* Le type complex qui représente les nombres complexes ou nombres imaginaires et qui se sert de la lettre j pour représenter la partie imaginaire d'un nombre.
 
-Notez que pour réaliser une division entière, on utilise l’opérateur //. On peut également utiliser l’opérateur / pour réaliser une division “classique” mais dans ce cas le résultat sera toujours considéré comme étant de type float (nombre décimal). Finalement, on utilise l’opérateur ** pour élever un nombre à la puissance.
+Notez que pour réaliser une division entière, on utilise l'opérateur //. On peut également utiliser l'opérateur / pour réaliser une division “classique” mais dans ce cas le résultat sera toujours considéré comme étant de type float (nombre décimal). Finalement, on utilise l'opérateur ** pour élever un nombre à la puissance.
 
 * Toute opération arithmétique entre nombres de type float donne un résultat de type float ;
 * Toute opération arithmétique entre nombres de types int et float donne un résultat de type float ;
@@ -83,7 +83,7 @@ Notez que pour réaliser une division entière, on utilise l’opérateur //. On
 
 ### Le type str ou chaine de caractères
 
-Le caractère d’échappement en Python est l’antislash \.
+Le caractère d'échappement en Python est l'antislash \.
 
 ### Le type de valeurs booléen
 
@@ -91,23 +91,23 @@ Le type de valeur booléen est un type qui ne contient que deux valeurs qui serv
 
 **Attention en Python à bien indiquer des majuscules car dans le cas contraire Python ne reconnaitra pas ces booléens.**
 
-### Utiliser la fonction type() pour connaitre le type d’une valeur
+### Utiliser la fonction type() pour connaitre le type d'une valeur
 
 Pour connaitre le type de valeur stockée dans une variable, on peut utiliser la fonction Python type(). On va passer la variable à tester en argument de cette fonction
 
 ## Définition et liste des opérateurs Python
 
-Un opérateur est un signe ou un symbole qui va nous permettre de réaliser une opération. Le signe = par exemple est en Python l’opérateur d’affectation simple : il permet d’affecter une valeur à une variable.
+Un opérateur est un signe ou un symbole qui va nous permettre de réaliser une opération. Le signe = par exemple est en Python l'opérateur d'affectation simple : il permet d'affecter une valeur à une variable.
 
 Python dispose de nombreux opérateurs qui peuvent être classés selon les catégories suivantes :
 
 * Les opérateurs arithmétiques ;
-* Les opérateurs d’affectation ou d’assignation ;
+* Les opérateurs d'affectation ou d'assignation ;
 * Les opérateurs de chaines ;
 * Les opérateurs de comparaison ;
 * Les opérateurs logiques ;
-* Les opérateurs d’identité ;
-* Les opérateurs d’appartenance ;
+* Les opérateurs d'identité ;
+* Les opérateurs d'appartenance ;
 * Les opérateurs binaires.
 
 ### Les opérateurs arithmétiques
@@ -122,19 +122,19 @@ Python dispose de nombreux opérateurs qui peuvent être classés selon les cat�
 | **         | Puissance         |
 | //         | Division entière |
 
-Le modulo correspond au reste d’une division Euclidienne (division entière) tandis que l’opérateur // permet d’obtenir le résultat entier d’une division
+Le modulo correspond au reste d'une division Euclidienne (division entière) tandis que l'opérateur // permet d'obtenir le résultat entier d'une division
 
 ### Les opérateurs de chaines
 
 Les opérateurs de chaines vont nous permettre de manipuler des données de type str.
 
-Python met à notre disposition deux opérateurs de chaine : l’opérateur de concaténation + et l’opérateur de répétition *.
+Python met à notre disposition deux opérateurs de chaine : l'opérateur de concaténation + et l'opérateur de répétition *.
 
-L’opérateur de concaténation va nous permettre de mettre bout à bout deux chaines de caractères afin d’en former une troisième, nouvelle.
+L'opérateur de concaténation va nous permettre de mettre bout à bout deux chaines de caractères afin d'en former une troisième, nouvelle.
 
-L’opérateur de répétition va nous permettre de répéter une chaine un certain nombre de fois.
+L'opérateur de répétition va nous permettre de répéter une chaine un certain nombre de fois.
 
-### Les opérateurs d’affection simple et composés Python
+### Les opérateurs d'affection simple et composés Python
 
 | Opérateur | Exemple | Equivalent à |
 | ---------- | ------- | ------------- |
@@ -205,7 +205,7 @@ L’opérateur de répétition va nous permettre de répéter une chaine un cert
 
 ## Listes
 
-Jusqu’à présent, nous n’avons stocké qu’une seule valeur à la fois dans nos variables. Les listes sont un type de données très particulier au sens où elles représentent des données composées ou combinées. Une liste est en effet par définition composée d’une suite de valeur ou d’éléments.
+Jusqu'à présent, nous n'avons stocké qu'une seule valeur à la fois dans nos variables. Les listes sont un type de données très particulier au sens où elles représentent des données composées ou combinées. Une liste est en effet par définition composée d'une suite de valeur ou d'éléments.
 
 Pour définir une nouvelle liste en Python, on va devoir utiliser une paire de crochets [ ].
 
@@ -219,15 +219,15 @@ On va pouvoir stocker tous types de valeurs dans une liste.
 infos= ['Michel', 33, True]
 ```
 
-Note : Si vous avez déjà étudié un autre langage de programmation par le passé, les liste doivent vous faire penser à ce qu’on appelle communément dans ces autres langages des tableaux. En effet, les listes Python sont très proches des tableaux qu’on peut retrouver dans de nombreux autres langages.
+Note : Si vous avez déjà étudié un autre langage de programmation par le passé, les liste doivent vous faire penser à ce qu'on appelle communément dans ces autres langages des tableaux. En effet, les listes Python sont très proches des tableaux qu'on peut retrouver dans de nombreux autres langages.
 
 ### Récupérer une ou plusieurs valeurs dans une liste
 
-Les listes Python sont par défaut indexées. Cela signifie que chaque valeur d’une liste est lié à un indice qu’on va pouvoir utiliser pour récupérer cette valeur en particulier.
+Les listes Python sont par défaut indexées. Cela signifie que chaque valeur d'une liste est lié à un indice qu'on va pouvoir utiliser pour récupérer cette valeur en particulier.
 
 Les listes possèdent des indices numériques qui commencent à 0.
 
-Pour récupérer une valeur en particulier dans une liste, on va devoir préciser le nom de la liste suivi de l’indice de cette valeur entre crochets.
+Pour récupérer une valeur en particulier dans une liste, on va devoir préciser le nom de la liste suivi de l'indice de cette valeur entre crochets.
 
 Notez que les indices négatifs sont acceptés.
 
@@ -262,7 +262,7 @@ infos= ['Michel', 33, True]
 
 ```
 
-Ce qu’on a vu jusqu’ici sur les listes s’applique également aux chaines de caractères. Les chaînes de caractères peuvent en effet également être indexées.
+Ce qu'on a vu jusqu'ici sur les listes s'applique également aux chaines de caractères. Les chaînes de caractères peuvent en effet également être indexées.
 
 ```py
 intro = 'Salut, ça va bien ?'
@@ -274,7 +274,7 @@ l
 bien
 ```
 
-A la différence des types de données simples comme les chaines qui sont immuables, les listes sont un type de données altérable ce qui signifie qu’on va pouvoir altérer leur structure ou modifier leur contenu en ajoutant, supprimant ou remplaçant des valeurs.
+A la différence des types de données simples comme les chaines qui sont immuables, les listes sont un type de données altérable ce qui signifie qu'on va pouvoir altérer leur structure ou modifier leur contenu en ajoutant, supprimant ou remplaçant des valeurs.
 
 ```py
 prenoms= ['Michel', 'Moustafa', 'Kevin', 'Tintin', 'Sangoku']
@@ -305,7 +305,7 @@ infos= prenoms +ages
 
 ### Exercice liste
 
-Écrire un programme python qui créé une liste semaine qui comprend les jours de la semaine, puis à l’aide de parcours successifs de la liste effectuer les actions suivantes :
+Écrire un programme python qui créé une liste semaine qui comprend les jours de la semaine, puis à l'aide de parcours successifs de la liste effectuer les actions suivantes :
 
 * Afficher la liste semaine
 * Afficher la valeur de semaine[4]
@@ -316,9 +316,9 @@ infos= prenoms +ages
 
 Les chaines de caractères et les listes sont deux types séquentiels de données : ce sont des données qui sont organisées sous la forme de séquence de caractères ou de valeurs. Les tuples sont un autre type séquentiel de données.
 
-Les tuples ressemblent aux listes : un tuple consiste en différentes valeurs entourées par des virgules. Notez qu’on encadre généralement les valeurs d’un tuple avec un couple de parenthèses même si cela n’est pas obligatoire.
+Les tuples ressemblent aux listes : un tuple consiste en différentes valeurs entourées par des virgules. Notez qu'on encadre généralement les valeurs d'un tuple avec un couple de parenthèses même si cela n'est pas obligatoire.
 
-Les tuples peuvent contenir différents types de valeurs comme des nombres, des chaines, des listes etc. et même d’autres tuples imbriqués.
+Les tuples peuvent contenir différents types de valeurs comme des nombres, des chaines, des listes etc. et même d'autres tuples imbriqués.
 
 ```py
 t1 = 'un', 'deux', 'trois'
@@ -346,7 +346,7 @@ Notez que dans le cas où on souhaite créer un tuple vide, on utilisera une pai
 
 ### Le déballage de séquence
 
-Une fonctionnalité intéressante des tuples est le “déballage de séquence”. Un déballage de séquence correspond à une façon rapide d’affecter les différentes valeurs d’un tuple dans des variables séparées.
+Une fonctionnalité intéressante des tuples est le “déballage de séquence”. Un déballage de séquence correspond à une façon rapide d'affecter les différentes valeurs d'un tuple dans des variables séparées.
 
 ```py
 personnage = ('Vladimir', 73, ['pêche', 'équitation'])
@@ -362,7 +362,7 @@ Attention ici : il faut bien faire attention à écrire les variables qui vont r
 
 ### Exercice tuple
 
-Écrire un programme python qui créé un tuple personnage qui comprend un non, un age et deux passions puis à l’aide de parcours successifs du tuple effectuer les actions suivantes :
+Écrire un programme python qui créé un tuple personnage qui comprend un non, un age et deux passions puis à l'aide de parcours successifs du tuple effectuer les actions suivantes :
 
 * Afficher le tuple
 * Afficher la valeur de passions[0]
@@ -373,7 +373,7 @@ Si vous devez traiter une collection qui ne changera pas, utilisez les tuples. E
 ## Les Dictionnaires Python
 
 Les dictionnaires (tableaux associatifs) sont un type de données Python.
-La grande différence entre les données séquentielles (listes, tuples) et les dictionnaires se situe dans la façon d’indexer les valeurs et dans la nature de l’index. Dans le cas des séquences, les différentes valeurs dont associées à des index numériques commençant à 0. Pour les dictionnaires on va pouvoir déterminer un index "key:value".
+La grande différence entre les données séquentielles (listes, tuples) et les dictionnaires se situe dans la façon d'indexer les valeurs et dans la nature de l'index. Dans le cas des séquences, les différentes valeurs dont associées à des index numériques commençant à 0. Pour les dictionnaires on va pouvoir déterminer un index "key:value".
 
 Dans les dictionnaires, les index seront des chaînes de caractères, contrairement aux listes.
 
@@ -392,7 +392,7 @@ heroes["Superman"]= " Clark Kent"
 
 ```
 
-Pour supprimer une paire clef : valeur d’un dictionnaire, nous allons utiliser l’instruction del.
+Pour supprimer une paire clef : valeur d'un dictionnaire, nous allons utiliser l'instruction del.
 
 ```py
 
@@ -401,9 +401,9 @@ del heroes["batman"]
 
 ## Ensembles
 
-Les ensemble ou sets forment un autre type de données composites Python. Un ensemble est une collection d’éléments non ordonnée, sans index et qui ne peut pas posséder l’élément dupliqué.
+Les ensemble ou sets forment un autre type de données composites Python. Un ensemble est une collection d'éléments non ordonnée, sans index et qui ne peut pas posséder l'élément dupliqué.
 
-Une des utilisation les plus courantes des ensembles est de les utiliser pour supprimer des valeurs doublons à partir d’un autre type de données.
+Une des utilisation les plus courantes des ensembles est de les utiliser pour supprimer des valeurs doublons à partir d'un autre type de données.
 
 ```py
 l2 = {"Mathile", 27, "Tennis", 27, "Tennis"}
@@ -411,20 +411,20 @@ print(l2)
 >>> {"Mathile", 27, "Tennis"}
 ```
 
-* Les listes sont des collections d’éléments ordonnés et altérables qui peuvent contenir plusieurs fois la même valeur ;
-* Les tuples sont des collections d’éléments ordonnés et immuables qui peuvent contenir plusieurs fois la même valeur ;
-* Les dictionnaires sont des collection d’éléments non ordonnés mais indexés avec des clefs de notre choix et altérables qui n’acceptent pas de contenir plusieurs fois le même élément ;
-* Les ensembles sont des collections d’éléments non ordonnées, non indexés et non modifiables qui n’acceptent pas de contenir plusieurs fois le même élément.
+* Les listes sont des collections d'éléments ordonnés et altérables qui peuvent contenir plusieurs fois la même valeur ;
+* Les tuples sont des collections d'éléments ordonnés et immuables qui peuvent contenir plusieurs fois la même valeur ;
+* Les dictionnaires sont des collection d'éléments non ordonnés mais indexés avec des clefs de notre choix et altérables qui n'acceptent pas de contenir plusieurs fois le même élément ;
+* Les ensembles sont des collections d'éléments non ordonnées, non indexés et non modifiables qui n'acceptent pas de contenir plusieurs fois le même élément.
 
 # D2 Les structures de contrôle python
 
-Une structure de contrôle est un ensemble d’instructions qui permet de contrôler l’exécution du code.
+Une structure de contrôle est un ensemble d'instructions qui permet de contrôler l'exécution du code.
 
-Les deux types de structures les plus communément utilisées sont les structures de contrôle conditionnelles qui permettent d’exécuter un bloc de code si une certaine condition est vérifiée et les structures de contrôle de boucle qui permettent d’exécuter un bloc de code en boucle tant qu’une condition est vérifiée.
+Les deux types de structures les plus communément utilisées sont les structures de contrôle conditionnelles qui permettent d'exécuter un bloc de code si une certaine condition est vérifiée et les structures de contrôle de boucle qui permettent d'exécuter un bloc de code en boucle tant qu'une condition est vérifiée.
 
 ## Les conditions Python
 
-Selon la valeur stockée dans une variable, nous allons vouloir exécuter un bloc de code plutôt qu’un autre.
+Selon la valeur stockée dans une variable, nous allons vouloir exécuter un bloc de code plutôt qu'un autre.
 
 Python nous fournit les structures conditionnelles suivantes :
 
@@ -438,14 +438,14 @@ Pour comparer des valeurs, nous allons devoir utiliser des opérateurs de compar
 
 | Opérateur | Définition                                                             |
 | ---------- | ----------------------------------------------------------------------- |
-| ==         | Permet de tester l’égalité en valeur et en type                      |
+| ==         | Permet de tester l'égalité en valeur et en type                      |
 | !=         | Permet de tester la différence en valeur ou en type                    |
 | <          | Permet de tester si une valeur est strictement inférieure à une autre |
 | >          | Permet de tester si une valeur est strictement supérieure à une autre |
 | <=         | Permet de tester si une valeur est inférieure ou égale à une autre   |
 | >=         | Permet de tester si une valeur est supérieure ou égale à une autre   |
 
-Lorsqu’on utilise un opérateur de comparaison, on demande à Python de tester si telle valeur est supérieure, égale, inférieur ou différente à telle autre valeur. Python va donc comparer les deux valeurs et toujours renvoyer un booléen : True si la comparaison est vérifiée ou False dans le cas contraire.
+Lorsqu'on utilise un opérateur de comparaison, on demande à Python de tester si telle valeur est supérieure, égale, inférieur ou différente à telle autre valeur. Python va donc comparer les deux valeurs et toujours renvoyer un booléen : True si la comparaison est vérifiée ou False dans le cas contraire.
 
 ```py
 4 < 5
@@ -463,9 +463,9 @@ False
 
 ## La condition if en Python
 
-Cette condition va nous permettre d’exécuter un code si (et seulement si) une certaine condition est vérifiée.
+Cette condition va nous permettre d'exécuter un code si (et seulement si) une certaine condition est vérifiée.
 
-Si Python évalue l’expression passée à True, le code dans la condition if sera exécuté. Dans le cas contraire, le code dans if sera ignoré.
+Si Python évalue l'expression passée à True, le code dans la condition if sera exécuté. Dans le cas contraire, le code dans if sera ignoré.
 
 ```py
 x = int(input('Entrer une valeur pour x : '))
@@ -478,9 +478,9 @@ if x > y:
     print("x contient une valeur strictement supérieur à y")
 ```
 
-Au final, vous pouvez retenir que toute expression qui suit un if va être évaluée par Python et que Python renverra toujours soit True, soit False. Nous n’avons donc pas nécessairement besoin d’une comparaison explicite pour faire fonctionner un if.
+Au final, vous pouvez retenir que toute expression qui suit un if va être évaluée par Python et que Python renverra toujours soit True, soit False. Nous n'avons donc pas nécessairement besoin d'une comparaison explicite pour faire fonctionner un if.
 
-Pour comprendre cela vous devez savoir qu’en dehors des comparaisons Python évaluera à True toute valeur passée après if à l’exception des valeurs suivantes qui seront évaluées à False :
+Pour comprendre cela vous devez savoir qu'en dehors des comparaisons Python évaluera à True toute valeur passée après if à l'exception des valeurs suivantes qui seront évaluées à False :
 
 * La valeur 0 (et 0.0) ;
 * La valeur None ;
@@ -488,7 +488,7 @@ Pour comprendre cela vous devez savoir qu’en dehors des comparaisons Python é
 
 ## La condition if… else en Python
 
-La structure conditionnelle if…else (« si… sinon » en français) est plus complète que la condition if puisqu’elle nous permet d’exécuter un premier bloc de code si un test renvoie True ou un autre bloc de code dans le cas contraire.
+La structure conditionnelle if…else (« si… sinon » en français) est plus complète que la condition if puisqu'elle nous permet d'exécuter un premier bloc de code si un test renvoie True ou un autre bloc de code dans le cas contraire.
 
 ```py
 x = 6
@@ -501,9 +501,9 @@ else:
 
 ## La condition if… elif… else en Python
 
-La condition if…elif…else (« si…sinon si…sinon ») est une structure conditionnelle encore plus complète que la condition if…else qui vannons permettre cette fois-ci d’effectuer autant de tests que l’on souhaite et ainsi de prendre en compte le nombre de cas souhaité.
+La condition if…elif…else (« si…sinon si…sinon ») est une structure conditionnelle encore plus complète que la condition if…else qui vannons permettre cette fois-ci d'effectuer autant de tests que l'on souhaite et ainsi de prendre en compte le nombre de cas souhaité.
 
-Il faut cependant faire attention à un point en particulier lorsqu’on utilise une structure Python if… elif… else : le cas où plusieurs elif possèdent un test évalué à True par Python.
+Il faut cependant faire attention à un point en particulier lorsqu'on utilise une structure Python if… elif… else : le cas où plusieurs elif possèdent un test évalué à True par Python.
 
 ```py
 x = int(input('Entrer une valeur pour x : '))
@@ -534,7 +534,7 @@ else:
 
 ## Utiliser les opérateurs logiques avec les conditions
 
-Les opérateurs logiques vont être principalement utilisés avec les conditions puisqu’ils vont nous permettre d’écrire plusieurs comparaisons au sein d’une même condition ou encore d’inverser la valeur logique d’un test.
+Les opérateurs logiques vont être principalement utilisés avec les conditions puisqu'ils vont nous permettre d'écrire plusieurs comparaisons au sein d'une même condition ou encore d'inverser la valeur logique d'un test.
 
 | Opérateur | Définition                                                         |
 | ---------- | ------------------------------------------------------------------- |
@@ -552,11 +552,11 @@ else:
     print('x ne contient pas l\'entier 5 et y ne contient l\'entier 4')
 ```
 
-l’opérateur logique not est très particulier puisqu’il nous permet d’inverser la valeur logique d’un test : si Python renvoie False à l’issue d’une évaluation par exemple et qu’on utilise l’opérateur not sur cette expression l’opérateur inversera la valeur renvoyée par Python et la valeur finale passée à la condition sera True.
+l'opérateur logique not est très particulier puisqu'il nous permet d'inverser la valeur logique d'un test : si Python renvoie False à l'issue d'une évaluation par exemple et qu'on utilise l'opérateur not sur cette expression l'opérateur inversera la valeur renvoyée par Python et la valeur finale passée à la condition sera True.
 
-## Opérateurs d’appartenance ou d’adhésion
+## Opérateurs d'appartenance ou d'adhésion
 
-L’opérateur in permet de tester si une certaine séquence de caractères ou de valeurs est présente dans une valeur d’origine et renvoie True si c’est le cas.
+L'opérateur in permet de tester si une certaine séquence de caractères ou de valeurs est présente dans une valeur d'origine et renvoie True si c'est le cas.
 
 ```py
 semaine = ["lundi", "Mardi", "Mercredi",
@@ -589,16 +589,16 @@ if "Mardi" in semaine:
 
 # Instructions répétitives
 
-Les boucles vont nous permettre d’exécuter plusieurs fois un bloc de code, c’est-à-dire d’exécuter un code « en boucle » tant qu’une condition donnée est vérifiée.
+Les boucles vont nous permettre d'exécuter plusieurs fois un bloc de code, c'est-à-dire d'exécuter un code « en boucle » tant qu'une condition donnée est vérifiée.
 
 * La boucle while (“tant que…”)
 * La boucle for (“pour…”)
 
-Le fonctionnement général des boucles sera toujours le même : on pose une condition qui sera généralement liée à la valeur d’une variable et on exécute le code de la boucle « en boucle » tant que la condition est vérifiée.
+Le fonctionnement général des boucles sera toujours le même : on pose une condition qui sera généralement liée à la valeur d'une variable et on exécute le code de la boucle « en boucle » tant que la condition est vérifiée.
 
 ## La boucle Python while
 
-La boucle while va nous permettre d’exécuter un certain bloc de code « tant qu’une » condition donnée est vérifiée.
+La boucle while va nous permettre d'exécuter un certain bloc de code « tant qu'une » condition donnée est vérifiée.
 
 ```py
 x = 1
@@ -608,13 +608,13 @@ while x < 10:
     x += 1
 ```
 
-Note : Lorsqu’on ajoute 1 à une variable, on dit qu’on l’incrémente. À l’inverse, lorsqu’on enlève 1 à la valeur d’une variable, on dit qu’on la décrémente. Les opérations d’incrémentation et de décrémentation sont très fréquentes au sein des boucles.
+Note : Lorsqu'on ajoute 1 à une variable, on dit qu'on l'incrémente. À l'inverse, lorsqu'on enlève 1 à la valeur d'une variable, on dit qu'on la décrémente. Les opérations d'incrémentation et de décrémentation sont très fréquentes au sein des boucles.
 
 ## La boucle Python for
 
-La boucle Python for possède une logique et une syntaxe différente de celles des boucle for généralement rencontrées dans d’autres langages.
+La boucle Python for possède une logique et une syntaxe différente de celles des boucle for généralement rencontrées dans d'autres langages.
 
-En effet, la boucle for Python va nous permettre d’itérer sur les éléments d’une séquence (liste, chaine de caractères, etc.) selon leur ordre dans la séquence.
+En effet, la boucle for Python va nous permettre d'itérer sur les éléments d'une séquence (liste, chaine de caractères, etc.) selon leur ordre dans la séquence.
 
 La condition de sortie dans cette boucle va être implicite : on sortira de la boucle après avoir parcouru le dernier élément de la séquence.
 
@@ -632,9 +632,9 @@ for jour in semaine:
 On va pouvoir utiliser la fonction range() pour itérer sur une suite de nombres avec une boucle for.
 Dans son utilisation la plus simple, nous allons nous contenter de passer un nombre en argument (entre les parenthèses) de range().
 
-Si on précise deux nombres en arguments de cette fonction, le premier nombre servira de point de départ pour la génération de nombres tandis que le second servira de point d’arrivée (en étant exclus).
+Si on précise deux nombres en arguments de cette fonction, le premier nombre servira de point de départ pour la génération de nombres tandis que le second servira de point d'arrivée (en étant exclus).
 
-Finalement, on peut préciser un troisième et dernier nombre en argument de range() qui nous permet de préciser son pas, c’est-à-dire l’écart entre deux nombres générés.
+Finalement, on peut préciser un troisième et dernier nombre en argument de range() qui nous permet de préciser son pas, c'est-à-dire l'écart entre deux nombres générés.
 
 ```py
 for n in range(10):
@@ -649,9 +649,9 @@ for n in range(10,15,2):
 
 ## La fonction Enumerate ()
 
-Ajoute un compteur à un itérable et le renvoie sous la forme d’un objet enumerate.
-Cet objet enumerate peut ensuite être utilisé directement dans les boucles for ou être converti en une liste de tuples à l’aide de la méthode list ().
-enumerate prend en paramètre une liste et renvoie un objet qui peut être associé à une liste contenant deux valeurs par élément : l’indice et l’élément de la liste parcourue.
+Ajoute un compteur à un itérable et le renvoie sous la forme d'un objet enumerate.
+Cet objet enumerate peut ensuite être utilisé directement dans les boucles for ou être converti en une liste de tuples à l'aide de la méthode list ().
+enumerate prend en paramètre une liste et renvoie un objet qui peut être associé à une liste contenant deux valeurs par élément : l'indice et l'élément de la liste parcourue.
 
 ```py
 semaine = ["lundi", "Mardi", "Mercredi","Jeudi", "Vendredi", "Samedi", "Dimanche"]
@@ -662,9 +662,9 @@ for index, value in enumerate(semaine):
 
 ## Les instructions break et continue
 
-Les instructions break et continue sont deux instructions qu’on retrouve dans de nombreux langages et qui sont souvent utilisées avec les boucles mais qui peuvent être utilisées dans d’autres contextes.
+Les instructions break et continue sont deux instructions qu'on retrouve dans de nombreux langages et qui sont souvent utilisées avec les boucles mais qui peuvent être utilisées dans d'autres contextes.
 
-L’instruction break permet de stopper l’exécution d’une boucle lorsqu’une certaine condition est vérifiée. On l’inclura souvent dans une condition de type if.
+L'instruction break permet de stopper l'exécution d'une boucle lorsqu'une certaine condition est vérifiée. On l'inclura souvent dans une condition de type if.
 
 ```py
 for val in "string":
@@ -675,7 +675,7 @@ for val in "string":
 print("The end")
 ```
 
-L’instruction continue permet elle d’ignorer l’itération actuelle de la boucle et de passer directement à l’itération suivante. Cette instruction va donc nous permettre d’ignorer toute ou partie de notre boucle dans certaines conditions et donc de personnaliser le comportement de notre boucle.
+L'instruction continue permet elle d'ignorer l'itération actuelle de la boucle et de passer directement à l'itération suivante. Cette instruction va donc nous permettre d'ignorer toute ou partie de notre boucle dans certaines conditions et donc de personnaliser le comportement de notre boucle.
 
 ```py
 for i in range(9):
@@ -719,27 +719,27 @@ Exemple : sangoku devient `u*k*o*g*n*a*s`
 
 # D3 Les fonctions
 
-## Qu’est-ce qu’une fonction ?
+## Qu'est-ce qu'une fonction ?
 
-Une fonction est un bloc de code nommé. Une fonction correspond à un ensemble d’instructions créées pour effectuer une tâche précise, regroupées ensemble et qu’on va pouvoir exécuter autant de fois qu’on le souhaite en “l’appelant” avec son nom.
+Une fonction est un bloc de code nommé. Une fonction correspond à un ensemble d'instructions créées pour effectuer une tâche précise, regroupées ensemble et qu'on va pouvoir exécuter autant de fois qu'on le souhaite en “l'appelant” avec son nom.
 
-Il existe deux grands “types” de fonctions en Python : les fonctions prédéfinies et les fonctions créées par l’utilisateur.
+Il existe deux grands “types” de fonctions en Python : les fonctions prédéfinies et les fonctions créées par l'utilisateur.
 
 ### Les fonctions prédéfinies Python
 
 Les fonction prédéfinies sont des fonctions déjà créées et mises à notre disposition par Python. Dans ce cours, nous avons déjà utilisé des fonctions prédéfinies comme la fonction print() ou la fonction type() par exemple.
 
-En fait, ces deux fonctions sont des fonctions complexes et qui contiennent de nombreuses lignes d’instructions leur permettant d’accomplir une tâche précise : l’affichage d’un résultat ou la détermination du type d’une valeur en l’occurence.
+En fait, ces deux fonctions sont des fonctions complexes et qui contiennent de nombreuses lignes d'instructions leur permettant d'accomplir une tâche précise : l'affichage d'un résultat ou la détermination du type d'une valeur en l'occurence.
 
-Cette complexité nous est cachée : nous n’avons qu’à appeler nos fonctions pour qu’elles fassent leur travail et n’avons pas à écrire la série d’instructions qu’elles contiennent à chaque fois et c’est tout l’intérêt des fonctions.
+Cette complexité nous est cachée : nous n'avons qu'à appeler nos fonctions pour qu'elles fassent leur travail et n'avons pas à écrire la série d'instructions qu'elles contiennent à chaque fois et c'est tout l'intérêt des fonctions.
 
 Python, dans sa version 3.7.4, met à notre disposition quasiment 70 [fonctions](https://docs.python.org/fr/3.7/library/functions.html?highlight=round#repr) prédéfinies.
 
-### Les fonction Python définies par l’utilisateur
+### Les fonction Python définies par l'utilisateur
 
-On va vouloir créer nos propres fonctions Python lorsque nos programmes utilisent de manière répétées une même série d’instructions : plutôt que de réécrire ces instructions à chaque fois, autant utiliser une fonction !
+On va vouloir créer nos propres fonctions Python lorsque nos programmes utilisent de manière répétées une même série d'instructions : plutôt que de réécrire ces instructions à chaque fois, autant utiliser une fonction !
 
-Pour définir une nouvelle fonction en Python, nous allons utiliser le mot clef def qui sert à introduire une définition de fonction. Ce mot clef doit être suivi du nom de la fonction, d’une paire de parenthèses au sein desquelles on pourra fournir une liste de paramètres et de : pour terminer la ligne comme ceci def ma_fonction():.
+Pour définir une nouvelle fonction en Python, nous allons utiliser le mot clef def qui sert à introduire une définition de fonction. Ce mot clef doit être suivi du nom de la fonction, d'une paire de parenthèses au sein desquelles on pourra fournir une liste de paramètres et de : pour terminer la ligne comme ceci def ma_fonction():.
 
 Notez que les noms de fonctions sont sensibles à la casse en Python.
 
@@ -751,7 +751,7 @@ def bonjour(prenom):
 bonjour('Thomas')
 ```
 
-### Préciser des valeurs par défaut pour les paramètres d’une fonction
+### Préciser des valeurs par défaut pour les paramètres d'une fonction
 
 ```py
 
@@ -763,9 +763,9 @@ bonjour('Thomas')
 bonjour('François', 39, 'Français')
 ```
 
-### Passer un nombre arbitraire d’arguments avec *args
+### Passer un nombre arbitraire d'arguments avec *args
 
-La syntaxe *args (remplacez “args” par ce que vous voulez) permet d’indiquer lors de la définition d’une fonction que notre fonction peut accepter un nombre variable d’arguments. Ces arguments sont intégrés dans un tuple.
+La syntaxe *args (remplacez “args” par ce que vous voulez) permet d'indiquer lors de la définition d'une fonction que notre fonction peut accepter un nombre variable d'arguments. Ces arguments sont intégrés dans un tuple.
 
 ```py
 
@@ -778,9 +778,9 @@ def somme(*args):
 somme(2,3,6)
 ```
 
-En programmation, nous voudrons souvent récupérer le résultat d’une fonction afin de l’utiliser dans le reste de notre script. L’instruction return va terminer l’exécution d’une fonction, ce qui signifie qu’on placera généralement cette instruction en fin de fonction puisque le code suivant une instruction return dans une fonction ne sera jamais lu ni exécuté.
+En programmation, nous voudrons souvent récupérer le résultat d'une fonction afin de l'utiliser dans le reste de notre script. L'instruction return va terminer l'exécution d'une fonction, ce qui signifie qu'on placera généralement cette instruction en fin de fonction puisque le code suivant une instruction return dans une fonction ne sera jamais lu ni exécuté.
 
-### Exemples d’utilisation de return en Python
+### Exemples d'utilisation de return en Python
 
 retour une valeur
 
@@ -807,7 +807,7 @@ print(ordonne)
 
 ### Les fonctions récursives
 
-Les fonctions récursive sont des fonctions qui s'appelle elle même dans son exécution : c’est ce qu’on appelle la récursivité.
+Les fonctions récursive sont des fonctions qui s'appelle elle même dans son exécution : c'est ce qu'on appelle la récursivité.
 Exemple la factorielle de 4 par exemple est égale à 4 * 3 * 2 * 1.
 
 ```py
@@ -822,35 +822,35 @@ print(factorielle(4))
 
 ### Les fonctions de conversion
 
-* La fonction str() retourne une chaine de caractères à partir d’une donnée qu’on va lui passer en argument
-* La fonction int() retourne un entier à partir d’un nombre ou d’une chaine contenant un nombre qu’on va lui passer en argument
-* La fonction float() retourne un nombre décimal à partir d’un nombre ou d’une chaine contenant un nombre qu’on va lui passer en argument
-* La fonction complex() retourne un nombre complexe à partir d’un nombre ou d’une chaine contenant un nombre qu’on va lui passer en argument
-* La fonction bool() retourne un booléen à partir d’une donnée qu’on va lui passer en argument
-* La fonction list() retourne une liste à partir d’une donnée itérable (une donnée dont on peut parcourir les valeurs)
-* La fonction tuple() retourne un tuple à partir d’une donnée itérable
-* La fonction dict() crée un dictionnaire à partir d’un ensemble de paires clef = “valeur”
-* La fonction set() retourne un ensemble (set) à partir d’une donnée itérable.
+* La fonction str() retourne une chaine de caractères à partir d'une donnée qu'on va lui passer en argument
+* La fonction int() retourne un entier à partir d'un nombre ou d'une chaine contenant un nombre qu'on va lui passer en argument
+* La fonction float() retourne un nombre décimal à partir d'un nombre ou d'une chaine contenant un nombre qu'on va lui passer en argument
+* La fonction complex() retourne un nombre complexe à partir d'un nombre ou d'une chaine contenant un nombre qu'on va lui passer en argument
+* La fonction bool() retourne un booléen à partir d'une donnée qu'on va lui passer en argument
+* La fonction list() retourne une liste à partir d'une donnée itérable (une donnée dont on peut parcourir les valeurs)
+* La fonction tuple() retourne un tuple à partir d'une donnée itérable
+* La fonction dict() crée un dictionnaire à partir d'un ensemble de paires clef = “valeur”
+* La fonction set() retourne un ensemble (set) à partir d'une donnée itérable.
 
 ### Les fonctions mathématiques
 
-La fonction *round()* permet d’arrondir un nombre spécifié en argument t à l’entier le plus proche avec un degré de précision (un nombre de décimales) éventuellement spécifié en deuxième argument.
+La fonction *round()* permet d'arrondir un nombre spécifié en argument t à l'entier le plus proche avec un degré de précision (un nombre de décimales) éventuellement spécifié en deuxième argument.
 
-Le nombre de décimales par défaut est 0, ce qui signifie que la fonction retournera l’entier le plus proche.
+Le nombre de décimales par défaut est 0, ce qui signifie que la fonction retournera l'entier le plus proche.
 
 La fonction *sum()* permet de calculer une somme. On peut lui passer une liste de nombres en arguments par exemple. On peut également lui passer une valeur “de départ” en deuxième argument qui sera ajoutée à la somme calculée.
 
-La fonction *max()* retourne la plus grande valeur d’une donnée itérable, c’est-à-dire d’une donnée dont on peut parcourir les différentes valeurs.
+La fonction *max()* retourne la plus grande valeur d'une donnée itérable, c'est-à-dire d'une donnée dont on peut parcourir les différentes valeurs.
 
-On peut lui passer autant d’arguments qu’on souhaite comparer de valeurs. Notez qu’on peut également comparer des chaines même si *max()* est peu souvent utilisée pour faire cela.
+On peut lui passer autant d'arguments qu'on souhaite comparer de valeurs. Notez qu'on peut également comparer des chaines même si *max()* est peu souvent utilisée pour faire cela.
 
-La fonction *min()*, au contraire, retourne la plus petite valeur d’une donnée itérable. Elle s’utilise exactement comme *max()*.
+La fonction *min()*, au contraire, retourne la plus petite valeur d'une donnée itérable. Elle s'utilise exactement comme *max()*.
 
 ### Autres fonctions Python natives utiles
 
-La fonction *len()*, tout d’abord, renvoie la longueur ou le nombre de valeurs d’une donnée de type séquence ou collection.
+La fonction *len()*, tout d'abord, renvoie la longueur ou le nombre de valeurs d'une donnée de type séquence ou collection.
 
-La fonction *input()* permet de dialoguer et d’échanger des données avec l’utilisateur.
+La fonction *input()* permet de dialoguer et d'échanger des données avec l'utilisateur.
 
 # Les listes suite et les modules
 
@@ -891,20 +891,20 @@ no_integers = [x for x in semaine if isinstance(x, str)]
 print(no_integers)
 ```
 
-## Définition et cas d’utilisation des modules Python
+## Définition et cas d'utilisation des modules Python
 
-On appelle “module” tout fichier constitué de code Python (c’est-à-dire tout fichier avec l’extension .py) importé dans un autre fichier ou script.
+On appelle “module” tout fichier constitué de code Python (c'est-à-dire tout fichier avec l'extension .py) importé dans un autre fichier ou script.
 Les modules permettent la séparation et donc une meilleure organisation du code.
 
 En Python, on peut distinguer trois grandes catégories de module en les classant selon leur éditeur :
 
 * Les modules standards qui ne font pas partie du langage en soi mais sont intégrés automatiquement par Python.
-* Les modules développés par des développeurs externes qu’on va pouvoir utiliser.
-* Les modules qu’on va développer nous mêmes.
+* Les modules développés par des développeurs externes qu'on va pouvoir utiliser.
+* Les modules qu'on va développer nous mêmes.
 
 ## Importer un module
 
-Pour importer un module, on utilise la syntaxe import nom-de-mon-module. Lorsque l’interprète rencontre une instruction import, il importe le module s’il est présent dans le path (le chemin de recherche). Pour rappel, le path ou chemin de recherche est une liste de répertoires dans lesquels l’interpréteur cherche avant d’importer un module.Pour être tout à fait précis, lorsqu’on importe un module, l’interpréteur Python le recherche dans différents répertoires selon l’ordre suivant :
+Pour importer un module, on utilise la syntaxe import nom-de-mon-module. Lorsque l'interprète rencontre une instruction import, il importe le module s'il est présent dans le path (le chemin de recherche). Pour rappel, le path ou chemin de recherche est une liste de répertoires dans lesquels l'interpréteur cherche avant d'importer un module.Pour être tout à fait précis, lorsqu'on importe un module, l'interpréteur Python le recherche dans différents répertoires selon l'ordre suivant :
 
 * Le répertoire courant .
 * Si le module est introuvable, Python recherche ensuite chaque répertoire listé dans la variable shell PYTHONPATH.
@@ -914,7 +914,7 @@ Pour importer un module, on utilise la syntaxe import nom-de-mon-module. Lorsque
 from math import *
 ```
 
-## Importer uniquement certains éléments d’un module
+## Importer uniquement certains éléments d'un module
 
 ```py
 from math import sqrt
@@ -928,23 +928,23 @@ import math as m
 
 ## Les modules Python standards
 
-Il existe un grand nombre de [modules](https://docs.python.org/fr/3/library/index.html) préconçus et prêts à l’emploi qui sont fournis d’office avec Python. Ces modules vont étendre le langage et nous permettre de réaliser toutes sortes d’opérations notamment grâce aux fonctions qu’ils nous fournissent.
+Il existe un grand nombre de [modules](https://docs.python.org/fr/3/library/index.html) préconçus et prêts à l'emploi qui sont fournis d'office avec Python. Ces modules vont étendre le langage et nous permettre de réaliser toutes sortes d'opérations notamment grâce aux fonctions qu'ils nous fournissent.
 
-Pour importer un module Python, nous allons à nouveau tout simplement utiliser une instruction import comme si on importait l’un de nos modules.
+Pour importer un module Python, nous allons à nouveau tout simplement utiliser une instruction import comme si on importait l'un de nos modules.
 
 Les modules Python standards à connaitre sont les suivants :
 
-* Le module cgi (“Common Gateway Interface” ou “Interface de Passerelle Commune” en français) fournit des éléments permettant à des programmes Python de s’exécuter sur des serveurs HTTP
+* Le module cgi (“Common Gateway Interface” ou “Interface de Passerelle Commune” en français) fournit des éléments permettant à des programmes Python de s'exécuter sur des serveurs HTTP
 * Le module *datetime* fournit des classes pour manipuler de façon simple ou plus complexe des dates et des heures
-* Le module *json* permet l’encodage et le décodage de données au format JSON
+* Le module *json* permet l'encodage et le décodage de données au format JSON
 * Le module *math* fournit un ensemble de fonctions permettant de réaliser des calculs mathématiques complexes
-* Le module *os* fournit une manière portable d’utiliser les fonctionnalités dépendantes du système d’exploitation
+* Le module *os* fournit une manière portable d'utiliser les fonctionnalités dépendantes du système d'exploitation
 * Le module *pickle* permet de sérialiser des objets Python
 * Le module *random* implémente des générateurs de nombres pseudo-aléatoires pour différentes distributions
-* Le module *re* fournit des opérations sur les expressions rationnelles similaires à celles que l’on trouve dans Perl
-* Le module *socket* fournit un accès à l’interface sockets qui correspond à un ensemble normalisé de fonctions de communication
-* Le module *sys* fournit un accès à certaines variables système utilisées et maintenues par l’interpréteur, et à des fonctions interagissant fortement avec ce dernier
-* Les modules *urllib.request* et *urllib.parse* permettent d’ouvrir, de lire et d’analyser des URLs.
+* Le module *re* fournit des opérations sur les expressions rationnelles similaires à celles que l'on trouve dans Perl
+* Le module *socket* fournit un accès à l'interface sockets qui correspond à un ensemble normalisé de fonctions de communication
+* Le module *sys* fournit un accès à certaines variables système utilisées et maintenues par l'interpréteur, et à des fonctions interagissant fortement avec ce dernier
+* Les modules *urllib.request* et *urllib.parse* permettent d'ouvrir, de lire et d'analyser des URLs.
 
 ## Exercices listes la suite
 
@@ -979,7 +979,7 @@ Les modules Python standards à connaitre sont les suivants :
 
 ## DRY
 
-Le premier commandement de la programmation est le DRY : ne vous répétez pas (Don’t Repeat Yourself en anglais).
+Le premier commandement de la programmation est le DRY : ne vous répétez pas (Don't Repeat Yourself en anglais).
 
 ## Commentez votre code !
 
@@ -1198,7 +1198,7 @@ pip freeze
 
 ## Web scraping avec Requests et Beautifull_soup
 
-ETL signifie extraction, transformation et chargement (Extract, Transform, Load en anglais). C’est une procédure qui "permettant d'effectuer des synchronisations massives d'information d'une source de données (le plus souvent une base de données) vers une autre" (source [Wikipédia](https://fr.wikipedia.org/wiki/Extract-transform-load)).
+ETL signifie extraction, transformation et chargement (Extract, Transform, Load en anglais). C'est une procédure qui "permettant d'effectuer des synchronisations massives d'information d'une source de données (le plus souvent une base de données) vers une autre" (source [Wikipédia](https://fr.wikipedia.org/wiki/Extract-transform-load)).
 
 ```shell
 pip install requests
