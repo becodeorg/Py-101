@@ -161,8 +161,8 @@ d'autres exemples 👋
 no_integers = []
 
 for x in semaine:
-    if type(x) == int:
-        lst.append(x)
+    if type(x) == str:
+        no_integers.append(x)
 
 print(no_integers)
 ```
@@ -244,7 +244,7 @@ Les modules Python standards à connaitre sont les suivants :
 
 ## Exercices Modularité
 
-### 5.1 La distance entre deux points P1(x1,x2) et P2(x2,y2) dans le plan est définie par : d = racine carrée de ((X2-X1)²+(y2-y1)²).Ecrire une fonction qui calcule cette distance après la saisie des coordonnées.
+### 5.1 La distance entre deux points P1(x1,y1) et P2(x2,y2) dans le plan est définie par : d = racine carrée de ((X2-X1)²+(y2-y1)²).Ecrire une fonction qui calcule cette distance après la saisie des coordonnées.
 
 ### 5.2 Reprendre l'exercice précédent afin de calculer le périmètre d'un triangle formé par trois points non alignés.
 
